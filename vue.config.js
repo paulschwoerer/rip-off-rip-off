@@ -1,4 +1,5 @@
 module.exports = {
+  baseUrl: '/rip-off-game/',
   chainWebpack: config => {
     config.module
       .rule("glsl")
