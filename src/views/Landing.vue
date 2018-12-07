@@ -83,6 +83,7 @@ interface PlayerScore {
   name: "Game"
 })
 class Landing extends Vue {
+  // @ts-ignore
   game: Game;
 
   score: PlayerScore = {
@@ -90,6 +91,7 @@ class Landing extends Vue {
     player2: 0
   };
 
+  // @ts-ignore
   $refs: {
     canvas: HTMLCanvasElement;
   };
