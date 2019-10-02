@@ -77,7 +77,7 @@ export default class CanvasRenderer {
 
     this.context = context;
 
-    resizeCanvasToDisplaySize(gl.canvas);
+    resizeCanvasToDisplaySize(<HTMLCanvasElement>gl.canvas);
 
     this.programs = {
       bloom: createProgram(gl, postVertexSource, bloomFragmentSource),
@@ -124,7 +124,7 @@ export default class CanvasRenderer {
 
     const gl = this.gl;
 
-    resizeCanvasToDisplaySize(gl.canvas);
+    resizeCanvasToDisplaySize(<HTMLCanvasElement>gl.canvas);
 
     this.context.tick(deltaTime);
 
